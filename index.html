@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Declan Clarke · Aerospace Engineer</title>
+  <meta name="description" content="Declan Clarke: aerospace engineering senior at NC State (Dec 2027). Former mechanical engineering co-op at General Dynamics Mission Systems; structures engineer at the Liquid Rocketry Lab.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Declan Clarke · Aerospace Engineer">
+  <meta property="og:description" content="Aerospace engineering senior at NC State. Previously a mechanical engineering co-op at General Dynamics Mission Systems.">
+  <meta property="og:url" content="https://declan-clarke.com/">
+  <meta property="og:image" content="https://declan-clarke.com/assets/img/headshot.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="assets/js/theme.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <a class="name" href="./">Declan Clarke</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a class="hide-sm" href="#experience">Experience</a>
+      <a href="assets/files/DeclanClarke_Resume.pdf">Resume</a><button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch between light and dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="who">
+        <img class="avatar" src="assets/img/headshot.jpg" alt="Declan Clarke" width="76" height="76">
+        <span class="status">Graduating December 2027</span>
+      </div>
+      <h1>Declan Clarke</h1>
+      <p class="role">Aerospace engineering student focused on structures and mechanical design.</p>
+      <p class="lede">
+        I'm a senior at <strong>NC State</strong> working in structures for the
+        <strong>Liquid Rocketry Lab</strong>. I recently finished a seven-month mechanical
+        engineering co-op at <strong>General Dynamics Mission Systems</strong>, doing CAD
+        design, rapid prototyping, and hydraulic test work.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="assets/files/DeclanClarke_Resume.pdf">View resume</a>
+        <a class="btn" href="mailto:djclarke@ncsu.edu">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/declan-clarke" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <dl class="facts">
+      <div><dt>Education</dt><dd>B.S. Aerospace Engineering<br>NC State · Dec 2027</dd></div>
+      <div><dt>Industry</dt><dd>Mechanical Engineer Co-op<br>General Dynamics Mission Systems</dd></div>
+      <div><dt>Strengths</dt><dd>Creo · NX · SolidWorks<br>Ansys · MATLAB/Simulink</dd></div>
+    </dl>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <a class="project" href="projects/subsonic-wind-tunnel.html">
+          <div class="row"><h3>Subsonic Wind Tunnel</h3><span class="when">2025 – now</span></div>
+          <p>Designing a 32-ft open-return wind tunnel to measure lift and drag on airfoils, model aircraft, and disc golf discs.</p>
+          <span class="result">~100 mph test section · SolidWorks + Ansys CFD <span class="arrow">→</span></span>
+        </a>
+        <a class="project" href="projects/liquid-rocketry-lab.html">
+          <div class="row"><h3>Liquid Rocketry Lab Structures</h3><span class="when">2023 – now</span></div>
+          <p>Airframe material and sizing trade studies in NX and Ansys, plus engine mount design for thrust and weight measurement on the test stand.</p>
+          <span class="result">Three structures roles over three years <span class="arrow">→</span></span>
+        </a>
+        <a class="project" href="projects/model-rocket.html">
+          <div class="row"><h3>Passively Steered Model Rocket</h3><span class="when">2023</span></div>
+          <p>A 3D-printed rocket steered by an offset center of mass, built for LRL's first-year structures challenge.</p>
+          <span class="result">1st of 6, landed closest to a 150-ft target <span class="arrow">→</span></span>
+        </a>
+        <a class="project" href="projects/aircraft-market-data.html">
+          <div class="row"><h3>Aircraft Market Data Automation</h3><span class="when">2022 – 2025</span></div>
+          <p>Automated aircraft market analysis with a web scraper, then built a BigQuery pipeline linking FAA registry data to aircraft owners.</p>
+          <span class="result">3–5 hours down to 20–30 minutes <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="jobs">
+        <li class="job">
+          <div class="row"><h3>Mechanical Engineer Co-op <span class="org">· General Dynamics Mission Systems</span></h3><span class="when">Jan – Jul 2026</span></div>
+          <p>Designed and iterated mechanical parts in Creo for underwater defense applications, built a real-time MATLAB/Simulink GUI for hardware-in-the-loop hydraulic testing, and supported hands-on pressure testing and assembly.</p>
+        </li>
+        <li class="job">
+          <div class="row"><h3>Structures <span class="org">· Liquid Rocketry Lab, NC State</span></h3><span class="when">Aug 2023 – now</span></div>
+          <ul class="sub">
+            <li>Airframe Engineer <span>2025 – now</span></li>
+            <li>Test Stand Engineer &amp; Funding Outreach <span>2024 – 2025</span></li>
+            <li>Dynamic Model Engineer <span>2023 – 2024</span></li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="row"><h3>Data Analyst <span class="org">· LifeStyle Aviation</span></h3><span class="when">Jul 2022 – Jan 2025</span></div>
+          <p>Started as a high school intern and grew into a part-time data role: CRM overhaul in Odoo, FAA-data enrichment in BigQuery, market analysis automation, and hands-on aircraft maintenance.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>CAD</dt><dd>Creo, Siemens NX, SolidWorks, Onshape, OpenVSP</dd>
+        <dt>Analysis</dt><dd>Ansys (Fluent), MATLAB, Simulink, XFoil, OpenRocket</dd>
+        <dt>Hands-on</dt><dd>3D printing, rapid prototyping, welding, soldering, hydraulic testing</dd>
+        <dt>Tools</dt><dd>Windchill, Jira, Confluence, BigQuery SQL</dd>
+      </dl>
+    </section>
+
+    <section>
+      <div class="contact">
+        <p>Hiring for aerospace or mechanical roles? I'd love to hear from you.</p>
+        <a class="btn primary" href="mailto:djclarke@ncsu.edu">djclarke@ncsu.edu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© 2026 Declan Clarke</span>
+    <span><a href="https://www.linkedin.com/in/declan-clarke" rel="noopener">LinkedIn</a><a href="assets/files/DeclanClarke_Resume.pdf">Resume</a></span>
+  </footer>
+</div>
+</body>
+</html>
