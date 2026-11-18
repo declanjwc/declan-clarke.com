@@ -24,14 +24,14 @@
   :root:not([data-theme="light"]) {
     --bg: #121416; --surface: #181b1e; --ink: #eceae6; --ink-2: #b9bcc1;
     --muted: #868b93; --line: #272b30;
-    --accent: #f07a7a; --accent-soft: #2a1616;  /* lighter red for text on dark */
+    --accent: #d03030; --accent-fill: #d03030; --accent-soft: #2a1616;  /* one brighter red for dark mode */
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #121416; --surface: #181b1e; --ink: #eceae6; --ink-2: #b9bcc1;
   --muted: #868b93; --line: #272b30;
-  --accent: #f07a7a; --accent-soft: #2a1616;  /* lighter red for text on dark */
+  --accent: #d03030; --accent-fill: #d03030; --accent-soft: #2a1616;  /* one brighter red for dark mode */
   color-scheme: dark;
 }
 
