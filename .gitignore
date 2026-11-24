@@ -2,11 +2,5 @@
 .claude/
 *.tmp
 
-# Source images. Publish the reviewed copies under assets/img/projects/portfolio.
-/Portfolio Images/
-
-# Local redesign preview (not published)
-/Redesign/
-/_to_delete/
-/design-lab/
+# Local only: old versions, design concepts, original photos
 /ARCHIVE/
