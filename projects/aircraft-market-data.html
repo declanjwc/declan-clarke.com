@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aircraft Market Data Automation · Declan Clarke</title>
-  <meta name="description" content="At LifeStyle Aviation: automating aircraft market analysis from 3–5 hours to 20–30 minutes, and a BigQuery pipeline linking FAA registry data to aircraft owners.">
+  <title>Aircraft Market Analyses · Declan Clarke</title>
+  <meta name="description" content="I automated aircraft listing collection and reduced the work time for a market analysis from 3–5 hours to 20–30 minutes.">
   <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="Aircraft Market Data Automation · Declan Clarke">
-  <meta property="og:description" content="At LifeStyle Aviation: automating aircraft market analysis from 3–5 hours to 20–30 minutes, and a BigQuery pipeline linking FAA registry data to aircraft owners.">
-  <meta property="og:image" content="https://declan-clarke.com/assets/img/headshot.jpg">
+  <meta property="og:title" content="Aircraft Market Analyses · Declan Clarke">
+  <meta property="og:description" content="I automated aircraft listing collection and reduced the work time for a market analysis from 3–5 hours to 20–30 minutes.">
+  <meta property="og:image" content="https://declan-clarke.com/assets/img/projects/portfolio/market-logo.webp">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,32 +34,34 @@
   <a class="crumb" href="../#projects">← All projects</a>
   <section class="detail-hero">
     <div>
-      <p class="eyebrow"><span class="dot"></span>LifeStyle Aviation · 2022 – 2025</p>
-      <h1>Aircraft Market Data Automation</h1>
-      <p class="summary">Automated a 3–5 hour manual market analysis down to 20–30 minutes, then built a BigQuery pipeline that links FAA registry data to aircraft owners.</p>
+      <p class="eyebrow"><span class="dot"></span>LifeStyle Aviation · Sales operations</p>
+      <h1>Aircraft Market Analyses</h1>
+      <p class="summary">I automated aircraft listing collection and reduced the work time for a market analysis from 3–5 hours to 20–30 minutes.</p>
     </div>
-    <dl class="facts"><div><dt>Company</dt><dd>LifeStyle Aviation</dd></div><div><dt>Dates</dt><dd>Jul 2022 – Jan 2025</dd></div><div><dt>Roles</dt><dd>Intern → Data Analyst</dd></div><div><dt>Tools</dt><dd>Octoparse, BigQuery, Odoo</dd></div></dl>
+    <dl class="facts"><div><dt>Role</dt><dd>Workflow design and automation</dd></div><div><dt>Tools</dt><dd>Octoparse, Excel, CSV</dd></div><div><dt>Source</dt><dd>Controller.com listings</dd></div><div><dt>Result</dt><dd>20–30 min per update</dd></div></dl>
   </section>
 
   <article class="prose" style="max-width:var(--read)">
-    <div class="role-box"><b>My role</b><p>Built the scraper and wrote all of the BigQuery SQL myself. I also ran the enrichment-vendor evaluation and documented the results for leadership.</p></div>
-    <h2>Objective</h2>
-    <p>LifeStyle Aviation is a Diamond Aircraft dealer. Sales needed current pricing on every comparable aircraft listing, plus a way to find and contact the owners of every Diamond aircraft.</p>
-    <h2>Market analysis automation</h2>
-    <p>Updating prices and finding new listings by hand took <b>3–5 hours</b> per pass. I built the automation in <b>Octoparse</b>: listing URLs differ only by an ID number, so one job could sweep a range of IDs, skip dead pages, and export every useful field to a spreadsheet. I then merged the separate scrapers into one job covering every model the sales team tracked.</p>
-    <p class="callout">A full pass dropped to 20–30 minutes, about 90% faster.</p>
-    <!-- Photo slot: add a <figure><img src="../assets/img/projects/...">...</figure> here, e.g. octoparse-1.jpg -->
-    <h2>Owner data pipeline</h2>
-    <ul>
-      <li>Combined the <b>FAA aircraft registry</b> files with other sources in a Google Cloud data lake (7 datasets).</li>
-      <li>Wrote <b>BigQuery SQL</b> to filter the registry by manufacturer model codes, producing every Diamond aircraft and its registered owner.</li>
-      <li>Evaluated B2B and B2C enrichment providers (D&amp;B Hoovers, BIGDBM, BatchLeads) with trial uploads. BatchLeads was integrated with the new <b>Odoo CRM</b>, so sales can enrich a contact in one click.</li>
-    </ul>
-    <!-- Photo slot: add a <figure><img src="../assets/img/projects/...">...</figure> here, e.g. bigquery-1.jpg -->
-    <h2>Also</h2>
-    <p>Contributed to a website redesign and Google Ads campaigns that helped grow traffic by about 50%, and did hands-on maintenance on DA42 Twin Stars, DA40NGs, and a Cessna 206.</p>
+    <h2>Starting point</h2>
+    <p>For my <a href="lifestyle-internship.html">LifeStyle Aviation internship</a>, I chose market analysis as my project of interest. During the four-week, 120-hour internship, I reviewed Controller listings, updated asking prices, and added newly listed aircraft. The team tracked the Cirrus SR20, SR22, and SR22T families, the SF50 and SF50-G2, Piper and Phenom jets, and Textron jets built before 2000.</p>
+    <p>The SR22T-G6 comparison spreadsheet grouped listings by model year. It recorded the N-number and linked listing, total airframe hours, asking price in USD, and whether the aircraft included the GTS premium package.</p>
+    <figure><a href="../assets/img/projects/portfolio/market-comparison.webp" target="_blank" rel="noopener" aria-label="Open full-size image. SR22T-G6 market comparison spreadsheet organized by model year"><img src="../assets/img/projects/portfolio/market-comparison.webp" alt="SR22T-G6 market comparison spreadsheet organized by model year" width="1800" height="943" loading="lazy" decoding="async"></a><figcaption>Original SR22T-G6 market comparison.</figcaption></figure>
+
+    <h2>Automation</h2>
+    <figure><img src="../assets/img/projects/portfolio/market-logo.webp" alt="Octoparse" width="260" loading="lazy" decoding="async"></figure>
+    <p>After a week of updates, I discussed a custom script with friends who coded and chose Octoparse to prototype the workflow. Its free tier supported up to 10 local tasks and 10,000 rows, which was enough for the project. I began with small tasks for individual aircraft types, then consolidated them to cover more models.</p>
+    <figure><a href="../assets/img/projects/portfolio/market-tasks.webp" target="_blank" rel="noopener" aria-label="Open full-size image. Octoparse dashboard listing aircraft market-collection tasks"><img src="../assets/img/projects/portfolio/market-tasks.webp" alt="Octoparse dashboard listing aircraft market-collection tasks" width="1800" height="1073" loading="lazy" decoding="async"></a><figcaption>Aircraft collection tasks in the Octoparse dashboard.</figcaption></figure>
+    <p>I used the consistent listing layout on <a href="https://www.controller.com/">Controller.com</a> to extract the fields the sales team needed. The workflow handled batches of roughly 200 listing URLs, skipped missing pages, and exported the results as CSV or Excel. I reviewed the export and marked listings from individual owners so the sales team could distinguish them from dealer inventory and identify potential aircraft purchases or sales opportunities.</p>
+    <div class="duo">
+      <figure><a href="../assets/img/projects/portfolio/market-scraper.webp" target="_blank" rel="noopener" aria-label="Open full-size image. Controller.com listing page with the Octoparse extraction interface"><img src="../assets/img/projects/portfolio/market-scraper.webp" alt="Controller.com listing page with the Octoparse extraction interface" width="1800" height="1067" loading="lazy" decoding="async"></a><figcaption>Listing capture workflow.</figcaption></figure>
+      <figure><a href="../assets/img/projects/portfolio/market-preview.webp" target="_blank" rel="noopener" aria-label="Open full-size image. Tabular preview of aircraft listing fields in Octoparse"><img src="../assets/img/projects/portfolio/market-preview.webp" alt="Tabular preview of aircraft listing fields in Octoparse" width="1800" height="721" loading="lazy" decoding="async"></a><figcaption>Extracted listing fields before export, with identifying fields masked.</figcaption></figure>
+    </div>
+    <figure><a href="../assets/img/projects/portfolio/market-export.webp" target="_blank" rel="noopener" aria-label="Open full-size image. Spreadsheet export with highlighted listings and identifying fields covered"><img src="../assets/img/projects/portfolio/market-export.webp" alt="Spreadsheet export with highlighted listings and identifying fields covered" width="1800" height="943" loading="lazy" decoding="async"></a><figcaption>Sales handoff with individually listed aircraft highlighted.</figcaption></figure>
+
+    <h2>Result and handoff</h2>
+    <p>Manual updates took 3–5 hours depending on price changes and new listings. With Octoparse, they took 20–30 minutes, most of which went toward reviewing seller types and highlighting individual-owner listings. I handed the spreadsheets to the sales team and spent another one to two weeks consolidating tasks and incorporating their feedback. The company was developing a new Odoo CRM at the time, which gave me a view into how the reporting process could eventually move into the CRM.</p>
   </article>
-  <nav class="pager" aria-label="More projects"><a href="model-rocket.html"><small>Previous</small><span>← Model Rocket</span></a><span></span></nav>
+  <nav class="pager" aria-label="More projects"><a href="model-rocket.html"><small>Previous</small><span>← Liquid Rocketry Lab Model Rocket</span></a><a class="next" href="aircraft-owner-data.html"><small>Next</small><span>BigQuery Data &amp; Enrichment →</span></a></nav>
 </main>
 
 <footer class="site-footer">

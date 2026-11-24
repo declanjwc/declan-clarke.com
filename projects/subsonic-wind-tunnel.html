@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Subsonic Wind Tunnel · Declan Clarke</title>
-  <meta name="description" content="Designing a 32-ft open-return subsonic wind tunnel to measure lift and drag on airfoils, model aircraft, and disc golf discs.">
+  <meta name="description" content="I’m designing a 32-ft subsonic wind tunnel to measure lift and drag on flying discs. The target test-section speed is approximately 100 mph.">
   <meta name="color-scheme" content="light dark">
   <meta property="og:title" content="Subsonic Wind Tunnel · Declan Clarke">
-  <meta property="og:description" content="Designing a 32-ft open-return subsonic wind tunnel to measure lift and drag on airfoils, model aircraft, and disc golf discs.">
-  <meta property="og:image" content="https://declan-clarke.com/assets/img/headshot.jpg">
+  <meta property="og:description" content="I’m designing a 32-ft subsonic wind tunnel to measure lift and drag on flying discs. The target test-section speed is approximately 100 mph.">
+  <meta property="og:image" content="https://declan-clarke.com/assets/img/projects/portfolio/tunnel-concept.webp">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,57 +36,34 @@
     <div>
       <p class="eyebrow"><span class="dot"></span>Personal project · In progress</p>
       <h1>Subsonic Wind Tunnel</h1>
-      <p class="summary">A 32-ft open-return wind tunnel I'm designing to measure lift and drag on airfoils, model aircraft, and disc golf discs.</p>
+      <p class="summary">I’m designing a 32-ft subsonic wind tunnel to measure lift and drag on flying discs. The target test-section speed is approximately 100 mph.</p>
     </div>
-    <dl class="facts"><div><dt>Role</dt><dd>Sole designer</dd></div><div><dt>Dates</dt><dd>Sep 2025 – now</dd></div><div><dt>Tools</dt><dd>SolidWorks, Ansys</dd></div><div><dt>Size</dt><dd>32 ft overall</dd></div><div><dt>Target</dt><dd>~100 mph</dd></div></dl>
+    <dl class="facts"><div><dt>Role</dt><dd>Design and analysis</dd></div><div><dt>Tools</dt><dd>SolidWorks, Ansys</dd></div><div><dt>Length</dt><dd>Approximately 32 ft</dd></div><div><dt>Target</dt><dd>Approximately 100 mph</dd></div><div><dt>Status</dt><dd>Fan sizing and material selection</dd></div></dl>
   </section>
-  <figure style="margin:0">
-    <div class="lead-visual">
-      <svg viewBox="0 0 900 230" role="img" aria-labelledby="wt">
-        <title id="wt">Side view: honeycomb, 9:1 contraction, 6-ft test section, 15-ft diffuser, then the fan. 32 ft overall.</title>
-        <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-arrow" d="M0,1 L10,5 L0,9 Z"/></marker></defs>
-        <path class="d-body" d="M50,56 L172,56 C224,56 223,92 275,92 L425,92 L800,63 L850,63 L850,157 L800,157 L425,128 L275,128 C223,128 224,164 172,164 L50,164 Z"/>
-        <g class="d-line">
-          <line x1="172" y1="56" x2="172" y2="164"/><line x1="800" y1="63" x2="800" y2="157"/>
-          <line x1="84" y1="56" x2="84" y2="164"/><line x1="94" y1="56" x2="94" y2="164"/><line x1="104" y1="56" x2="104" y2="164"/>
-          <ellipse cx="825" cy="89" rx="5" ry="18"/><ellipse cx="825" cy="131" rx="5" ry="18"/>
-        </g>
-        <rect class="d-hl" x="275" y="92" width="150" height="36"/>
-        <text class="d-text" x="111" y="44" text-anchor="middle">Honeycomb</text>
-        <text class="d-text" x="223" y="44" text-anchor="middle">9:1 contraction</text>
-        <text class="d-text" x="350" y="82" text-anchor="middle">Test section</text>
-        <text class="d-text" x="612" y="66" text-anchor="middle">Diffuser</text>
-        <text class="d-text" x="825" y="48" text-anchor="middle">Fan</text>
-        <g class="d-dim"><line x1="275" y1="133" x2="275" y2="192"/><line x1="425" y1="133" x2="425" y2="192"/><line x1="800" y1="162" x2="800" y2="192"/><line x1="50" y1="169" x2="50" y2="222"/><line x1="850" y1="162" x2="850" y2="222"/></g>
-        <line class="d-dim" x1="277" y1="186" x2="423" y2="186" marker-start="url(#ar)" marker-end="url(#ar)"/>
-        <text class="d-text" x="350" y="180" text-anchor="middle">6 ft</text>
-        <line class="d-dim" x1="427" y1="186" x2="798" y2="186" marker-start="url(#ar)" marker-end="url(#ar)"/>
-        <text class="d-text" x="612" y="180" text-anchor="middle">15 ft</text>
-        <line class="d-dim" x1="52" y1="216" x2="848" y2="216" marker-start="url(#ar)" marker-end="url(#ar)"/>
-        <text class="d-text" x="450" y="210" text-anchor="middle">32 ft overall</text>
-      </svg>
-    </div>
-    <figcaption class="caption">Side-view layout, redrawn from my concept sketch. Test section outlined in red. Not to scale vertically.</figcaption>
-  </figure>
+
   <article class="prose" style="max-width:var(--read)">
-    <div class="role-box"><b>My role</b><p>Everything so far: concept, sizing, CAD, and CFD. It's a personal project, built on my family's property.</p></div>
-    <h2>Objective</h2>
-    <p>I've long wanted lift and drag data on disc golf discs and frisbees, which is hard to get without access to a university tunnel. The goal is a tunnel that reaches <b>about 100 mph</b> in the test section, with flow uniform enough for repeatable measurements, sized to fit in a Quonset hut.</p>
-    <h2>Design</h2>
+    <h2>September 7 · Project objective</h2>
+    <p>I wanted a mechanical and aerospace project that combined design, manufacturing, and experimental aerodynamics. I’ve long been interested in measuring lift and drag on flying discs. Limited access to the university’s wind tunnel led me to design my own, with enough flow uniformity to support repeatable measurements and room to test airfoils and small models.</p>
+
+    <h2>September 12 · Concept layout</h2>
+    <p>I set aside space in a Quonset hut and sketched a 32-ft open-return tunnel. The concept puts the flow-conditioning hardware and contraction upstream of the test section, with the diffuser and fan downstream.</p>
+    <figure><a href="../assets/img/projects/portfolio/tunnel-concept.webp" target="_blank" rel="noopener" aria-label="Open full-size image. Hand-drawn isometric sketches and dimensioned side view of the wind tunnel"><img src="../assets/img/projects/portfolio/tunnel-concept.webp" alt="Hand-drawn isometric sketches and dimensioned side view of the wind tunnel" width="994" height="931" loading="lazy" decoding="async"></a><figcaption>Original concept sketch with isometric and side views.</figcaption></figure>
+    <ol>
+      <li><b>Contraction.</b> A honeycomb and filters condition the incoming flow at the cost of added pressure loss. I’m using a 9:1 area ratio as the starting point and evaluating ratios up to 12:1 alongside the fan operating point.</li>
+      <li><b>Test section.</b> The 6-ft section is designed to be rigid and sealed to limit vibration and leakage at the 100 mph target. The concept includes a fiberglass viewing panel for observing the test article.</li>
+      <li><b>Diffuser.</b> The 15-ft diffuser increases cross-sectional area to reduce air velocity and recover static pressure. I’m considering HVAC-style isolation and damping as a lower-cost way to limit vibration and noise from the downstream fan.</li>
+    </ol>
+
+    <h2>Analysis and status</h2>
+    <p>I modeled the components in SolidWorks and ran internal-flow CFD in Ansys. Fan sizing and material selection are still in progress. The target speed and contraction ratio are design inputs pending validation.</p>
+    <figure><a href="../assets/img/projects/portfolio/tunnel-contraction-notes.webp" target="_blank" rel="noopener" aria-label="Open full-size image. Handwritten notes on contraction ratio, freestream velocity, and pressure gradients"><img src="../assets/img/projects/portfolio/tunnel-contraction-notes.webp" alt="Handwritten notes on contraction ratio, freestream velocity, and pressure gradients" width="994" height="486" loading="lazy" decoding="async"></a><figcaption>Design notes on contraction sizing and flow behavior.</figcaption></figure>
+    <h2>Appendix and references</h2>
     <ul>
-      <li><b>Honeycomb and filters</b> straighten the incoming flow. They add pressure loss, so the fan is sized above the clean-duct estimate.</li>
-      <li><b>9:1 contraction</b> accelerates the flow into the test section. Fan sizing will confirm the ratio, with room to go up to 12:1.</li>
-      <li><b>6-ft test section</b>, built to handle 100 mph, airtight, with a fiberglass viewing window.</li>
-      <li><b>15-ft diffuser</b> grows the cross-section gradually to recover pressure.</li>
-      <li><b>Fan at the exit</b>, with HVAC-style sound and vibration damping as the low-cost option.</li>
+      <li><a href="https://ntrs.nasa.gov/api/citations/19880012661/downloads/19880012661.pdf">Contraction Design for Small Low-Speed Wind Tunnels (NASA PDF)</a>. I used this report to understand how contraction geometry affects the flow entering the test section.</li>
+      <li><a href="https://flight.engr.ucdavis.edu/facilities/aeronautical-wind-tunnel/">UC Davis aeronautical wind tunnel specifications and schematics</a>. This facility informed the concept layout and dimensions.</li>
     </ul>
-    <p>The UC Davis wind tunnel and NASA guidance on contraction ratio and velocity shaped the key decisions.</p>
-    <!-- Photo slot: add a <figure><img src="../assets/img/projects/...">...</figure> here, e.g. wind-tunnel-1.jpg -->
-    <h2>Status</h2>
-    <ul><li>Components designed in SolidWorks.</li><li>CFD run in Ansys on the internal flow path.</li><li>Now selecting materials ahead of the build.</li></ul>
-    <!-- TODO: add CFD contour images, material choices, and build photos as they happen. -->
   </article>
-  <nav class="pager" aria-label="More projects"><a href="hrzn-vtol.html"><small>Previous</small><span>← HRZN Tilt-Rotor VTOL</span></a><a class="next" href="liquid-rocketry-lab.html"><small>Next</small><span>Rocket Airframe & Test Stand →</span></a></nav>
+  <nav class="pager" aria-label="More projects"><a href="hrzn-vtol.html"><small>Previous</small><span>← HRZN Tilt-Rotor VTOL</span></a><a class="next" href="liquid-rocketry-lab.html"><small>Next</small><span>Rocket Airframe &amp; Test Stand →</span></a></nav>
 </main>
 
 <footer class="site-footer">
