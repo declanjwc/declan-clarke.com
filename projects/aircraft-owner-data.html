@@ -5,70 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BigQuery Data &amp; Enrichment · Declan Clarke</title>
   <meta name="description" content="I wrote BigQuery SQL to connect FAA aircraft and owner records, then evaluated enrichment providers for LifeStyle Aviation’s Odoo CRM.">
-  <meta name="color-scheme" content="light dark">
   <meta property="og:title" content="BigQuery Data &amp; Enrichment · Declan Clarke">
   <meta property="og:description" content="I wrote BigQuery SQL to connect FAA aircraft and owner records, then evaluated enrichment providers for LifeStyle Aviation’s Odoo CRM.">
   <meta property="og:image" content="https://declan-clarke.com/assets/img/projects/portfolio/bigquery-logo.webp">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="color-scheme" content="light dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="../assets/js/theme.js"></script>
-  <link rel="stylesheet" href="../assets/css/style.css?v=21">
+  <link rel="stylesheet" href="../assets/css/style.css?v=31">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="../">Declan Clarke</a>
-    <nav class="nav" aria-label="Main">
-      <a href="../#projects">Projects</a>
-      <a class="hide-sm" href="../#experience">Experience</a>
-      <a class="hide-sm" href="../#contact">Contact</a>
-      <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch between light and dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
-      <a class="btn ghost" href="../assets/files/DeclanClarke_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="resume">Resume</a>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap">
-  <a class="crumb" href="../#projects">← All projects</a>
-  <section class="detail-hero">
-    <div>
-      <p class="eyebrow"><span class="dot"></span>LifeStyle Aviation · Data integration</p>
-      <h1>BigQuery Data &amp; Enrichment</h1>
-      <p class="summary">I wrote BigQuery SQL to connect FAA aircraft and owner records, then evaluated enrichment providers for LifeStyle Aviation’s Odoo CRM.</p>
-    </div>
-    <dl class="facts"><div><dt>Role</dt><dd>SQL development and vendor evaluation</dd></div><div><dt>Tools</dt><dd>BigQuery, SQL, Looker</dd></div><div><dt>Data</dt><dd>FAA registry and reference files</dd></div><div><dt>CRM</dt><dd>Odoo, BatchLeads</dd></div></dl>
-  </section>
-
-  <article class="prose" style="max-width:var(--read)">
-    <h2>Project scope</h2>
+<header class="hd-bar"><div class="hd"><a href="../">Declan Clarke</a><span>Aerospace Engineering, NC State</span><nav aria-label="Main"><a href="../#index">Index</a><a href="../assets/files/DeclanClarke_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="resume">Resume ↗</a><button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch between light and dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><a class="mail" href="mailto:djclarke@ncsu.edu" data-goatcounter-click="email">Email</a></nav></div></header>
+<main>
+<div class="g">
+<section class="hero p"><p class="lbl"><a href="../#index">← Index</a> · LifeStyle Aviation · Data integration</p><h1>BigQuery Data &amp; Enrichment</h1>
+  <ul class="meta" aria-label="Project details"><li>SQL development and vendor evaluation</li><li>BigQuery, SQL, Looker</li><li>Odoo CRM</li></ul></section>
+<section class="blk sum" aria-label="Summary"><div><h2 class="lbl">Problem</h2><p>LifeStyle Aviation's CEO wanted FAA aircraft records linked to their registered owners, and a way to fill missing contact fields in the company's Odoo CRM.</p></div><div><h2 class="lbl">What I did</h2><p>Wrote BigQuery SQL that joins the FAA registry files and filters them by manufacturer model code, including the Diamond models the company distributes, then tested three enrichment providers against the team's criteria over several weeks.</p></div><div class="res"><h2 class="lbl">Result</h2><p>BatchLeads best matched the requirements. The CRM workflow built on it lets staff request a missing phone number or email directly from a contact record, paying only for returned data.</p></div></section>
+<figure class="lead"><div class="lead-art"><a href="../assets/img/projects/portfolio/bigquery-query-results.webp" target="_blank" rel="noopener" aria-label="Open full-size image. BigQuery results with personal names and aircraft identifiers covered"><img src="../assets/img/projects/portfolio/bigquery-query-results.webp" alt="BigQuery results with personal names and aircraft identifiers covered" width="828" height="511" decoding="async"></a></div><figcaption>Query result structure with identifying fields masked.</figcaption></figure>
+<div class="body"><article class="prose">
+<h2>Scope: connect FAA aircraft records to their owners</h2>
     <figure><img src="../assets/img/projects/portfolio/bigquery-logo.webp" alt="Google BigQuery" width="260" loading="lazy" decoding="async"></figure>
     <p>LifeStyle Aviation CEO John Armstrong asked me to connect FAA aircraft records with their registered owners and then evaluate ways to fill in missing contact fields in the CRM. I used Google BigQuery, a serverless data warehouse, to query and join the data with SQL, and used Google Looker to inspect it. I consulted the lead developer as the work progressed and wrote the SQL used in the project, with some input from my father.</p>
 
-    <h2>Joining and filtering registry data</h2>
+    <h2>SQL that joins FAA registry files and filters by model</h2>
     <p>The FAA’s Releasable Aircraft Database includes the Aircraft Registration Master, Aircraft Dealer Applicant, Aircraft Document Index, Aircraft Reference by Make/Model Series/Sequence, Deregistered Aircraft, Engine Reference, and Reserve N-Number files. I focused on linking the relevant datasets, removing duplicate fields, and relating aircraft registrations and model records to the owner name or company and mailing address.</p>
     <p>I filtered the master file by manufacturer model code, then expanded the SQL filter to cover the Diamond Aircraft models relevant to LifeStyle Aviation’s distribution business. I no longer have access to the production data lake, so these archived examples show the query, its output structure, and the expanded model filter.</p>
-    <div class="duo">
-      <figure><a href="../assets/img/projects/portfolio/bigquery-registry-sql.webp" target="_blank" rel="noopener" aria-label="Open full-size image. BigQuery SQL filtering the FAA aircraft registry by manufacturer model code"><img src="../assets/img/projects/portfolio/bigquery-registry-sql.webp" alt="BigQuery SQL filtering the FAA aircraft registry by manufacturer model code" width="445" height="696" loading="lazy" decoding="async"></a><figcaption>SQL filter for the FAA registration master file.</figcaption></figure>
-      <figure><a href="../assets/img/projects/portfolio/bigquery-query-results.webp" target="_blank" rel="noopener" aria-label="Open full-size image. BigQuery results with personal names and aircraft identifiers covered"><img src="../assets/img/projects/portfolio/bigquery-query-results.webp" alt="BigQuery results with personal names and aircraft identifiers covered" width="828" height="511" loading="lazy" decoding="async"></a><figcaption>Query result structure with identifying fields masked.</figcaption></figure>
-    </div>
+    <figure><a href="../assets/img/projects/portfolio/bigquery-registry-sql.webp" target="_blank" rel="noopener" aria-label="Open full-size image. BigQuery SQL filtering the FAA aircraft registry by manufacturer model code"><img src="../assets/img/projects/portfolio/bigquery-registry-sql.webp" alt="BigQuery SQL filtering the FAA aircraft registry by manufacturer model code" width="445" height="696" loading="lazy" decoding="async"></a><figcaption>SQL filter for the FAA registration master file.</figcaption></figure>
     <figure><a href="../assets/img/projects/portfolio/bigquery-diamond-models.webp" target="_blank" rel="noopener" aria-label="Open full-size image. SQL WHERE clause grouping model codes for Diamond aircraft"><img src="../assets/img/projects/portfolio/bigquery-diamond-models.webp" alt="SQL WHERE clause grouping model codes for Diamond aircraft" width="508" height="468" loading="lazy" decoding="async"></a><figcaption>Expanded Diamond model-code filter.</figcaption></figure>
 
-    <h2>Evaluating enrichment providers</h2>
+    <h2>Three data providers tested; BatchLeads chosen</h2>
     <p>The team planned to sync Odoo CRM records with a cloud data lake through BigQuery’s Python client. Before the next data load, John asked me to survey consumer and business data providers, compare trial enrichment results against the team’s criteria, and document my findings with links to each provider’s API instructions. I evaluated D&amp;B Hoovers, BIGDBM, and <a href="https://batchleads.io/">BatchLeads</a>. D&amp;B Hoovers initially looked strongest to me. After several weeks of testing, BatchLeads best matched the company’s requirements.</p>
     <figure><img src="../assets/img/projects/portfolio/batchleads-logo.webp" alt="BatchLeads" width="300" height="67" loading="lazy" decoding="async"></figure>
     <p>The resulting CRM workflow let staff request missing fields such as phone numbers and email addresses directly from a contact record. The integration used a pay-per-use model for returned information. My work covered the FAA data join, SQL filters, and vendor testing that supported that workflow.</p>
-  </article>
-  <nav class="pager" aria-label="More projects"><a href="aircraft-market-data.html"><small>Previous</small><span>← Aircraft Market Analyses</span></a><a class="next" href="lifestyle-internship.html"><small>Next</small><span>LifeStyle Aviation Internship →</span></a></nav>
+</article></div>
+<nav class="pager" aria-label="More projects"><a href="aircraft-market-data.html"><small>Previous</small><span>← Aircraft Market Analyses</span></a><a class="next" href="lifestyle-internship.html"><small>Next</small><span>LifeStyle Aviation Internship →</span></a></nav>
+</div>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© 2026 Declan Clarke · Cookie-free analytics by GoatCounter</span>
-    <span><a href="https://www.linkedin.com/in/declan-clarke" rel="noopener" data-goatcounter-click="linkedin">LinkedIn</a><a href="../assets/files/DeclanClarke_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="resume">Resume</a></span>
-  </div>
-</footer>
+<footer class="foot"><div class="g"><span>© 2026 Declan Clarke · Cookie-free analytics by GoatCounter</span><span><a href="https://www.linkedin.com/in/declan-clarke" target="_blank" rel="noopener" data-goatcounter-click="linkedin">LinkedIn</a><a href="../assets/files/DeclanClarke_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="resume">Resume</a></span></div></footer>
+<script src="../assets/js/lightbox.js" defer></script>
 <script data-goatcounter="https://declanclarke.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
