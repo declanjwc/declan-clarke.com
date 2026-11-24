@@ -141,6 +141,11 @@ p, li { text-wrap: pretty; }
 /* ---------- Project grid ---------- */
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+.project-actions { margin-top: 24px; }
+.more-projects-heading { margin: 16px 0 28px; }
+.more-projects-heading h1 { margin: 0; font-size: clamp(38px, 5.4vw, 60px); line-height: 1.05; letter-spacing: -0.04em; font-weight: 600; }
+@media (min-width: 960px) { .more-projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.more-projects-grid .metric b { font-size: clamp(38px, 4.8vw, 56px); }
 
 .card {
   display: flex; flex-direction: column; text-decoration: none;
